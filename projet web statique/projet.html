@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title href="insta logo.jpeg">Home</title>
+
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .all {
+    background-image: url(bgimg2.png) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    height: 100vh;
+    width:fit-content;
+
+  }
+  nav {
+    background-color: transparent;
+  }
+  nav .nav-link :hover{
+    color: azure;
+
+  }
+ 
+
+
+  .navbar-brand img {
+
+    border: 2px;
+    border-radius: 50px;
+    max-width: 50px;
+
+
+  }
+
+
+  .navbar-brand img:hover {
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+  }
+
+  @keyframes circle {
+    0% {
+      rotate: 0;
+    }
+
+    100% {
+      rotate: 360deg;
+    }
+  }
+
+
+
+
+ 
+
+  .article h1 {
+    font-size: 80px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-family: serif;
+    font-variant: small-caps;
+    font-style: italic;
+    color: rgb(252, 252, 252);
+    text-shadow: black 12px 12px 13px;
+  }
+
+  .article q {
+ 
+ color: rgb(255, 214, 32);
+ font-size: larger;
+ 
+
+}
+
+ .article {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width:fit-content;
+    border-radius: 12px;
+    border: 3px solid white;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    margin: 10%;
+    padding: 5px;
+  }
+  
+
+  .article p {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-family:'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-size: 1rem;
+    font-style:italic;
+   
+    border-radius: 10px;
+    
+    margin: 0;
+
+    color: rgb(252, 252, 252);
+    text-shadow: black 5px 5px 10px;
+
+  }
+
+  .article p a {
+    text-decoration: none;
+    color: gold;
+    background-color: black;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 3px;
+
+  }
+
+  
+  .nav-link {
+   color: rgb(0, 0, 0) !important;
+   font-size: larger;
+   font-style:italic;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+   
+
+  }
+  .nav-link:hover{
+    
+    color:white !important;
+    transition: 0.5s ;
+    font-size: x-large;
+ 
+    
+  }
+  #c1{
+    color: white!important ;
+    font-size: x-large;
+  }
+  @media  (max-width:1027px) {
+    .article h1 {
+    font-size: 60px;
+  }
+
+  }
+
+  
+  @media (max-width: 768px) {
+
+.article h1 {
+    font-size: 45px;
+}
+
+}
+
+@media (max-width: 480px) {
+
+.article h1 {
+    font-size:35px ;
+}
+.article p{
+  font-size: 10px;
+}
+
+}
+
+@media (max-width: 375px) {
+.article h1 {
+    font-size: 25px;
+}
+
+.article p {
+    font-size:8px;
+}
+
+}
+
+
+  /* section fix */
+  .section-fix{
+    display: flex;
+    align-items: center;
+    
+}
+.section-fix-container{
+    background-image:url(Imgbg.JPG.png) ;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;/* parent */
+}
+.section-fix-offre{
+    font-size: 4rem;
+    color:#fb8500;
+    font-weight: bolder;
+    font-family: serif;
+    font-variant: small-caps;
+    font-style: italic;
+}
+.section-fix-special{
+    font-size: 4rem;
+    color: white;
+    margin-bottom:1rem ;
+    font-weight: bolder;
+    font-family: serif;
+    font-variant: small-caps;
+    font-style: italic;
+   
+}
+.section-fix-btn{
+    color: #023047;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.1rem;
+    background-color:#fb8500;
+    border: none ;
+    transition: transform .5s ease-in;
+    font-weight: bolder;
+    font-family: serif;
+    font-variant: small-caps;
+    font-style: italic;
+   
+}
+.section-fix-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color:#023047;
+    color: #fb8500;
+   
+    text-transform: uppercase;
+    
+}
+.section-fix-container::before{
+ content: '';  /* just with after and before "."  */ 
+ position: absolute ; /* kat7arak 3la 7sab parent */
+ inset: 0; /* distance between div ou parent */
+ background-color: rgb(0, 0,0,.554);
+}
+.section-fix-container .contenu{
+  z-index: 5;
+}
+@media screen and (max-width:500px) {
+    .section-fix-special{
+        font-size: 2.8rem;
+    }
+    .section-fix-offre{
+       font-size: 3.3rem; 
+    }
+    .section-fix-btn{
+        font-size:0.8rem ;
+    }
+}
+
+/* section fin */
+
+
+</style>
+
+<body >
+  
+  <div class="all">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="dsimg.JPEG" alt="" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active link-light" id="c1" aria-current="page" href="projet.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="offres.html">Offers</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="packs.html" >packs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inscription.html" >inscription</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="article">
+        <h1>
+          Welcome to <q>les délices de Safi</q> page
+        </h1>
+        <p >
+          This is the official page of <q>Les délices de Safi</q>.
+          Here you can find different kinds of cakes and Moroccan traditional food
+          <a href="offres.html">(Offers)</a>, you can also create your account
+          <a href="inscription.html">(Inscription)</a> to benefit from the reduction. Also, explore our
+          <a href="packs.html" target="_blank">packs</a>.
+        </p>
+      </div>
+    </section>
+ 
+    
+  </div>
+  <!-- section fix -->
+  <section class="section-fix section">
+    <div class="section-fix-container">
+      <div class="contenu">
+        <h1 class="section-fix-offre">profit 30% of réduction</h1>
+        <h1 class="section-fix-special">signup Now</h1>
+        <button class="section-fix-btn" ><a href="inscription.html" style="text-decoration: none;color: #faf8fa;">signup</a></button>
+      </div>
+    </div>
+  </section>
+  <!-- section fix -->
+
+
+ 
+  <footer class=" text-center bg-dark">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"
+          role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!"
+          role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+          role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+          role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!"
+          role="button"><i class="fab fa-linkedin-in"></i></a>
+
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-warning p-3  " >
+      © 2024 Copyright:
+      <a class="text-warning" href="#">LESDS</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+</body>
+
+</html>

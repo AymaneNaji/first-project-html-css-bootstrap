@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title href="insta logo.jpeg">Inscription</title>
+
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .all {
+    background-image: url(bgimg2.png) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    height: 100vh;
+    width:100%;
+
+  }
+  nav {
+    background-color: transparent;
+  }
+  nav .nav-link :hover{
+    color: azure;
+
+  }
+ 
+
+
+  .navbar-brand img {
+
+    border: 2px;
+    border-radius: 50px;
+    max-width: 50px;
+
+
+  }
+
+
+  .navbar-brand img:hover {
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+  }
+
+  @keyframes circle {
+    0% {
+      rotate: 0;
+    }
+
+    100% {
+      rotate: 360deg;
+    }
+  }
+
+
+
+
+
+ 
+
+
+  .article form {
+    width:400px ;
+    margin: auto;
+    backdrop-filter: blur(8px) brightness(60%); /* Adjust the blur value as needed */
+  padding: 20px; /* Add padding to enhance the visual appeal */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  border:solid white 2px;
+  color: rgb(250, 249, 247);
+}
+  
+
+  form h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  form label, form input, form button {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  .article {
+    max-height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    margin-top:3% 
+    
+  
+  }
+  form a{
+    margin-left: 90px;
+  }
+
+
+
+  
+
+
+  
+
+  
+  .nav-link {
+   color: rgb(0, 0, 0) !important;
+   font-size: larger;
+   font-style:italic;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+   
+
+  }
+  .nav-link:hover{
+    
+    color:white !important;
+    transition: 0.5s ;
+    font-size: x-large;
+ 
+    
+  }
+
+  #c1{
+    color: white!important ;
+    font-size: x-large;
+  }
+
+
+
+
+
+
+</style>
+
+<body >
+  
+  <div class="all">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="dsimg.JPEG" alt="" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active " href="projet.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="offres.html">Offers</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="packs.html" >packs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" id="c1" aria-current="page" href="inscription.html" >inscription</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <section class="fr">
+      <div class="article">
+        <form action="">
+          <h1>Login</h1>
+            <div class="mb-3 mt-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" pattern=".{7,14}" required>
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+              </label>
+              <a href="connecte.html">Create account</a>
+            </div>
+            <button  type="submit" class="btn btn-primary btn-lg" >Login</button>
+        </form>
+      </div>
+      
+    </section>
+ 
+    
+  </div>
+
+ 
+  <footer class=" text-center bg-dark">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"
+          role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!"
+          role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+          role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+          role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!"
+          role="button"><i class="fab fa-linkedin-in"></i></a>
+
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-warning p-3  " >
+      © 2024 Copyright:
+      <a class="text-warning" href="#">LESDS</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+</body>
+
+</html>
